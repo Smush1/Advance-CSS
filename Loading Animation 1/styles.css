@@ -1,0 +1,39 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container{
+    display: flex;
+}
+
+
+.circle{
+    width: 1.5em;
+    height: 1.5em;
+    margin: .5em;
+    border-radius: 40px;
+    background-color: darkslategrey;
+    animation: loading 3s infinite;
+}
+
+
+@keyframes loading{
+    50%{
+        width: 2em;
+        height: 2em;
+        background-color: lightgray;
+    }
+
+    100%{
+        background-color: darkslategrey;
+        animation: loading 1s;
+    }
+}
+
+
