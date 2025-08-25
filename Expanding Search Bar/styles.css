@@ -24,13 +24,14 @@
 
 .search-bar{
     width: 33.3%;
-    transition: width 1s;
+    transition: all .5s;
     border: 1px solid black;
+    line-height: 2;
 }
 
     .search-bar:focus{
         width: 80%;
-        
+        border-color: lightblue
     }
 
 .search-bar:focus::placeholder{
